@@ -15,6 +15,7 @@ public static void main(String args[]){
 	System.out.println("2-Substraction");
 	System.out.println("3-Multiplication");
 	System.out.println("4-Divison");
+	System.out.println("5-Exit");
 	int choice=s.nextInt();
 
 	int result;
@@ -57,12 +58,13 @@ public static void main(String args[]){
 			  }
 			catch (ArithmeticException e)
 			{ 
-			  System.out.println("divide excepto"); 
+			  System.out.println("You can't divide a number by zero, please type a valid number"); 
 			}
 			break;	
 
 		case 5:
 			System.out.println("Exiting the program...");
+			System.exit(0);
 			break;
 
 		default:
@@ -72,7 +74,7 @@ public static void main(String args[]){
 	  }
 		catch (Exception e)
 		{
-			System.out.println("Wrong input");
+			System.out.println("Wrong input, type a numeric input");
 		}
 
 		Scanner sb = new Scanner(System.in);
